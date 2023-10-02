@@ -5,6 +5,7 @@ import LogoSubtitle from '../../assets/images/name.png'
 // we are getting the fontawesome import npm is on pkjs
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome ,faUser, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 //here are importing rmb have to be the same name  
@@ -17,6 +18,7 @@ const Sidebar = () => (
       <img   className="sub-logo"  src={LogoSubtitle} alt='name'/>
     </Link>
     <nav>
+
         <NavLink exact="true" activeClassName="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d42" />
         </NavLink>
@@ -29,9 +31,28 @@ const Sidebar = () => (
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d42" />
         </NavLink>
 
-        
-
     </nav>
+    <ul>
+      <li>
+        <a  
+         target="_blank"
+          rel="noreferrer"
+          href='https://www.linkedin.com/in/david-haro-7981ab1a5/'
+        >
+          <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' className="contact-linkedin"/>
+        </a>
+      </li>
+
+      <li>
+        <a  
+         target="_blank"
+          rel="noreferrer"
+          href='https://www.linkedin.com/in/david-haro-7981ab1a5/'
+        >
+          <FontAwesomeIcon icon={faGithub} color='#4d4d4e' className="contact-Github"/>
+        </a>
+      </li>
+    </ul>
 
   </div>
 );

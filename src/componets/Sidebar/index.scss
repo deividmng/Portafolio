@@ -101,5 +101,44 @@
         }
       }
     }
+
+
+    ul {
+      font-size: 42px;
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: block;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+
+        li {
+
+          display: inline-block; 
+          margin-right: 10px; 
+          a {
+           
+            padding: 7px 0;
+            display: block;
+            font-size: 25px;
+            line-height: 16px;
+            display: block;
+
+          }
+
+          .contact-linkedin, .contact-Github {
+            font-size: 32px;
+          }
+
+          .contact-linkedin {
+            :hover {
+              color: blue;
+            }
+          }
+        }
+    }
   }
+  
   
