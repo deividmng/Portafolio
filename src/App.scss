@@ -1,7 +1,6 @@
 $primaty-color:#ffd700;
-
-
  @import 'animate.css';
+ @import '~loaders.css/src/animations/pacman.scss';
 
 
 
@@ -33,9 +32,9 @@ $primaty-color:#ffd700;
 //   font-family: 'Helvetica Neue', sans-serif;
 // }
 
-.loader-hidden {
-  display: none;
-}
+// .loader-hidden {
+//   display: block;
+// }
 
 .loader-active {
   display: block;
@@ -45,8 +44,8 @@ $primaty-color:#ffd700;
   margin: auto;
   top: 0;
   bottom: 0;
-  width: 50px;
+  width: 150px;
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
-} 
+}
