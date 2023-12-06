@@ -4,7 +4,7 @@ import LogoS from '../../assets/images/logo.png'
 import LogoSubtitle from '../../assets/images/name.png'
 // we are getting the fontawesome import npm is on pkjs
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome ,faUser, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faHome ,faUser, faEnvelope, faP} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -31,6 +31,13 @@ const Sidebar = () => (
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d42" />
         </NavLink>
 
+        <NavLink exact={true} activeClassName="active" className="proyect-link" to="/proyect">
+          <FontAwesomeIcon icon={faP} color="#4d4d42" />
+        </NavLink>
+
+      
+        
+
     </nav>
     <ul>
       <li>
@@ -39,7 +46,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href='https://www.linkedin.com/in/david-haro-7981ab1a5/'
         >
-          <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' className="contact-linkedin"/>
+          <FontAwesomeIcon icon={faLinkedin} color=' #0a66c2' className="contact-linkedin"/>
         </a>
       </li>
 

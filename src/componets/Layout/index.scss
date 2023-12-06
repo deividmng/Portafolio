@@ -9,8 +9,14 @@
     bottom: auto;
     top:35px;
     margin-left:  20px;
+    color:#ffd700;
+    &:hover {
+        color: lighten($color: #ffd700, $amount: 60);
+    }
     
 }
+
+
 
 .tags {
     color:#ffd700;
@@ -23,6 +29,11 @@
     font-size: 23px;
     font-family: 'Times New Roman', Times, serif;
     transform: skew(-20deg);
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: lighten($color: #ffd700, $amount: 30);
+    }
 }
 
 .bottom-tag-html {

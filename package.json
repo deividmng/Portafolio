@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.2",
     "emailjs-com": "^3.2.0",
     "gsap-trial": "^3.12.2",
     "loaders.css": "^0.1.2",
@@ -21,7 +22,9 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "reactstrap": "^9.2.0",
     "sass": "^1.67.0",
+    "swiper": "^10.3.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

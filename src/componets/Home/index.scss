@@ -1,3 +1,7 @@
+
+
+
+
 .home-page {
 
     .text-zone {
@@ -15,6 +19,12 @@
          font-family: 'Coolvetica';
          font-weight: 400;
 
+
+         &:hover::before {
+          color: lighten($color: #ffd700, $amount: 60);
+      }
+         
+
         &::before {
             content: '<h1>';
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -24,10 +34,11 @@
             margin-top: -40px;
             left: 15px;
             opacity: 0.6;
+            transition: color 0.3s ease;
         }
 
         &::after {
-            content: '<h1>';
+            content: '<h2>';
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: #ffd700;
             font-size: 18px;
@@ -36,17 +47,17 @@
             margin-left: 290px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+            
         }
 
         img {
-            margin-left: 20px;
+          
             width: 32px;
-            opacity: 0;
             height: auto;
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
             height: 144px;
-            width: 144px;
+            width: 114px;
           }     
     }
 
@@ -102,14 +113,8 @@
     animation-duration: 12s;
     transform-style: preserve-3d;
     transform-origin: 130px 130px 0;
-    margin-left: calc(50% - 100px);
-    /* Setting up, to be avalibe to stop de animation with hover,first make as runnig by defautl*/
-    animation-play-state: running;
+    margin-left: calc(50% - 100px);  
 
-    &:hover {
-        animation-play-state: paused; /* To stop de animation*/
-      }
-  
     div {
       position: absolute;
       width: 337px;
@@ -170,6 +175,7 @@
     83% {
       transform: rotateX(90deg);
     }
+    
   }
   
 

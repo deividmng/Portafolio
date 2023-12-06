@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import LogoTitle from '../../assets/images/d.png';
 import AnimatedLetters from '../AnimatedLetters';
-import Logo from './logo'
+import D3 from '../../assets/images/D (doble) logo.svg'
 import './index.scss';
 import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +10,7 @@ import { faCss3, faGithub, faHtml5, faJs, faReact, faSass } from '@fortawesome/f
 
 
 const Home = () => {
-
+  
     const [letterClass, setLetterClass] =  useState('text-animate')
     const nameArray = ['','a','v','i','d']
     const jobArray = ['W','e','b', ' ','D','e','v','e','l','o','p','e','r']
@@ -41,7 +40,8 @@ const Home = () => {
                     <br/> 
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
-                <img src={LogoTitle} alt='developer'/>
+              
+                <img   className="letra-d"  src={D3} alt='letraD'/>
                 <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
                 idx={15}/>

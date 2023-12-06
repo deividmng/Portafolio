@@ -87,12 +87,12 @@
             content: 'CONTACT';
           }
         }
-        &.contact-link{
+    
+        &.proyect-link{
           &:after {
-            content: 'CONTACT';
+            content: 'PROYECTS';
           }
         }
-        
       }
   
       a.active {
@@ -134,7 +134,7 @@
 
           .contact-linkedin {
             :hover {
-              color: blue;
+              color: darken($color: #0a66c2, $amount: 14)
             }
           }
         }
