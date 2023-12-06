@@ -1,4 +1,5 @@
 import './index.scss'
+import F3 from '../../assets/images/to-do3.png'
 
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
@@ -18,7 +19,7 @@ const About = () => {
     return (
          // Rmb open the loader <> and close at the end 
     <> 
-        <div className='container about-page'>
+        <div className=' about-page'>
             <div className='text-zone'>
             <h1>
             <AnimatedLetters
@@ -46,10 +47,16 @@ const About = () => {
           </p>
             </div>
 
-          
+         
+        
         </div>
+        <div className='img-me' >
+            <img  className='max' src={F3} alt="developer" />
+          </div>
+        
         <Loader type="pacman" />
     </>
+    
     )
 }
 
