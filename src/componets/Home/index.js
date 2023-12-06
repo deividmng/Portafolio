@@ -52,7 +52,10 @@ const Home = () => {
                 <br/>
                 </h1>
                 <h2>Full-stack web developer</h2>
+                <div className='link-contact'>
+
                 <Link to="/contact" className='flat-buttom'>CONTACT ME</Link>
+                </div>
             </div>
            
         </div>
