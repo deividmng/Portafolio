@@ -7,9 +7,6 @@ import About from './componets/About'
 import Contact from './componets/Contact';
 import Proyect from './componets/Proyect';
 
-
-
-
 function App() {
   return (
    <>
