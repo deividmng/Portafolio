@@ -1,93 +1,88 @@
-
 .home-page {
-
   .text-zone {
-      position: absolute;
-      left: 10%;
-      top: 30%;
-      width: 40%;
-      max-height: 90%;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 40%;
+    max-height: 90%;
   }
 
   h1 {
-       color: #fff;
-       font-size: 53px;
-       margin: 0;
-       font-family: 'Coolvetica';
-       font-weight: 400;
+    color: #fff;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
 
-
-       &:hover::before {
-        color: lighten($color: #ffd700, $amount: 60);
+    &:hover::before {
+      color: lighten($color: #ffd700, $amount: 60);
     }
-       
 
-      &::before {
-          content: '<h1>';
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          color: #ffd700;
-          font-size: 18px;
-          position: absolute;
-          margin-top: -40px;
-          left: 15px;
-          opacity: 0.6;
-          transition: color 0.3s ease;
-      }
+    &::before {
+      content: '<h1>';
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: 15px;
+      opacity: 0.6;
+      transition: color 0.3s ease;
+    }
 
-      &::after {
-          content: '<h2>';
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          color: #ffd700;
-          font-size: 18px;
-          position: absolute;
-          margin-top: 18px;
-          margin-left: 290px;
-          animation: fadeIn 1s 1.7s backwards;
-          opacity: 0.6;
-          
-      }
+    &::after {
+      content: '<h2>';
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 290px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
 
-      img {
-        
-          width: 32px;
-          height: auto;
-          animation: rotateIn 1s linear both;
-          animation-delay: 1.4s;
-          height: 144px;
-          width: 114px;
-        }     
+    img {
+      width: 32px;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
+      height: 144px;
+      width: 114px;
+    }
   }
 
   h2 {
-      color: #8d8d8d;
-      margin-top: 20px;
-      font-weight: 100;
-      font-size: 11px;
-      font-family: sans-serif;
-      letter-spacing: 3px;
-      animation: fadeIn 1s 1.8s backwards;
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
   }
 
   .flat-buttom {
-      color: #ffd700;
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 4px;
-      font-family: sans-serif;
-      text-decoration: none;
-      padding: 10px 18px;
-      border: 1px solid #ffd700;
-      margin-top: 25px;
-      float: left;
-      animation: fadeIn 1s 1.8s backwards;
-      white-space: nowrap;
-      transition: background 0.3s ease, color 0.3s ease;
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    transition: background 0.3s ease, color 0.3s ease;
 
-      &:hover {
-          background: #ffd700;
-          color: #333;
-      }
-
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
   }
 }
 
@@ -102,7 +97,6 @@
   overflow: hidden;
 }
 
-
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
@@ -110,12 +104,12 @@
   animation-duration: 12s;
   transform-style: preserve-3d;
   transform-origin: 130px 130px 0;
-  margin-left: calc(50% - 100px);  
+  margin-left: calc(50% - 100px);
 
   div {
     position: absolute;
     width: 337px;
-    height:337px;
+    height: 337px;
     border: 1px solid #ccc;
     background: rgba(255, 255, 255, 0.4);
     text-align: center;
@@ -172,30 +166,23 @@
   83% {
     transform: rotateX(90deg);
   }
-  
 }
-
 
 /////mq for the tlf
 
 @media screen and (max-width: 844px) {
-
   .stage-cube-cont {
-    
     width: 110%;
     height: 100%;
     top: +400px;
     left: +10px;
     margin-left: 0;
     position: absolute;
-    
+
     z-index: -1;
-  }  
-  
+  }
+
   .home-page {
-    
-
-
     h1 {
       color: #b72d2d;
       font-size: 53px;
@@ -203,80 +190,163 @@
       font-family: 'Coolvetica';
       font-weight: 400;
 
-
       &:hover::before {
-       color: lighten($color: #ffd700, $amount: 60);
-   }
-      
-  }
+        color: lighten($color: #ffd700, $amount: 60);
+      }
+    }
     .text-zone {
-     
       left: +125px;
-      top:+5%;
+      top: +5%;
     }
     .home-page {
-
       .text-zone {
-          position: absolute;
-          left: 10%;
-          top: 30%;
-          width: 40%;
-          max-height: 90%;
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        width: 40%;
+        max-height: 90%;
       }
-  
-  
+    }
   }
 }
 
-}
+// getting the 390\844 this is the one is work 
+ @media  (max-width:700px) {
+  .home-page {
+    h1  {
+      position: relative;
+      left: -10px;
+      width: 240px;
+    }
+
+    h2 {
+      position: relative;
+      left: 10px;
+
+    }
+    .container {
+      width: 230px;
+    }
+  }
+  .cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 65px 65px 0; /* Ajusta el punto de origen de la transformación */
+    margin-left: calc(50% - 50px);
+  
+    div {
+      position: absolute;
+      width: 168px; /* Ajusta el ancho */
+      height: 168px; /* Ajusta la altura */
+      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, 0.4);
+      text-align: center;
+      font-size: 60px; /* Ajusta el tamaño de la fuente */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px 0px lightyellow; /* Ajusta la sombra */
+    }
+  
+    .face1 {
+      transform: translateZ(85px); /* Ajusta la profundidad */
+      color: #dd0031;
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(85px);
+      color: #f06529;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(85px);
+      color: #28a4d9;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(85px);
+      color: #5ed4f4;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(85px);
+      color: #efd81d;
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(85px);
+      color: #ec4d28;
+    }
+  }
+  
+ }
+
+
 
 
 
 @media screen and (max-width: 844px) {
-
-  
   .home-page {
-
-        position: absolute;
-        left: -40px;
-        
-         
-          
-    
-
+    position: absolute;
+    left: -40px;
 
     h1 {
+
       color: #f0e7e7;
       font-size: 33px;
       margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
-     
-      padding-left: 22px;
-      
 
+      padding-left: 22px;
 
       &:hover::before {
-       color: lighten($color: #ffd700, $amount: 60);
-   }
-      
-  }
-   
-    .home-page {
-
-      .text-zone {
-          position: absolute;
-          left: 110%;
-          top: 1%;
-          width: 30%;
-          max-height: 90%;
+        color: lighten($color: #ffd700, $amount: 60);
       }
-  
-  
+    }
+
+    .home-page {
+      .text-zone {
+        position: absolute;
+        left: 110%;
+        top: 1%;
+        width: 30%;
+        max-height: 90%;
+      }
+    }
   }
 }
 
+
+// this one is the lp
+@media screen and (min-width: 1500px) {
+
+  .home-page {
+    position: absolute;
+    left: -30px;
+
+    h1 {
+     
+      color: #f0e7e7;
+      font-size: 33px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+
+      padding-left: 22px;
+
+      &:hover::before {
+        color: lighten($color: #ffd700, $amount: 60);
+      }
+    }
+
+    .home-page {
+      .text-zone {
+        background-color: red;
+        position: absolute;
+        left: 110%;
+        top: -10%;
+        width: 30%;
+        max-height: 80%;
+      }
+    }
+  }
 }
-
-
-
