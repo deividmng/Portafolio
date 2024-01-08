@@ -6,6 +6,7 @@ import Home from './componets/Home';
 import About from './componets/About'
 import Contact from './componets/Contact';
 import Proyect from './componets/Proyect';
+import Games from './componets/Games';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="proyect" element={<Proyect/>} />
+          <Route path="games" element={<Games/>} />
        
         </Route>
       </Routes>

@@ -41,18 +41,23 @@
   
         i {
           transition: all 0.3s ease-out;
+          transition: opacity 0.3s ease-out;
         }
   
         &:hover {
           color: #ffd700;
   
           svg {
-            opacity: 1;
+            transition: opacity 1s ease-out;
+            opacity: 0;
           }
   
           &:after {
+            transition: opacity 1s ease-out;
             opacity: 1;
           }
+
+       
         }
   
         &:after {
@@ -93,6 +98,18 @@
             content: 'PROYECTS';
           }
         }
+        
+        &.games-link{
+          &:after {
+            content: 'GAMES';
+          }
+        }
+        &.brain-link{
+          &:after {
+            content: 'LEARN';
+          }
+        }
+    
       }
   
       a.active {
