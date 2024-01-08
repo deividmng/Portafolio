@@ -4,8 +4,11 @@ import LogoS from '../../assets/images/logo.png'
 import LogoSubtitle from '../../assets/images/name.png'
 // we are getting the fontawesome import npm is on pkjs
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome ,faUser, faEnvelope, faP} from '@fortawesome/free-solid-svg-icons';
+import { faHome ,faUser, faEnvelope, faP , faGamepad, faBrain } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+
+// import { FaGamepad } from "react-icons/fa";
 
 
 //here are importing rmb have to be the same name  
@@ -34,7 +37,17 @@ const Sidebar = () => (
         <NavLink exact={true} activeClassName="active" className="proyect-link" to="/proyect">
           <FontAwesomeIcon icon={faP} color="#4d4d42" />
         </NavLink>
+        
 
+        <NavLink exact={true} activeClassName="active" className="games-link" to="/games">
+          <FontAwesomeIcon icon={faGamepad} color="#4d4d42" />
+        </NavLink>
+
+        <NavLink exact={true} activeClassName="active" className="brain-link" to="/brain">
+          <FontAwesomeIcon icon={faBrain} color="#4d4d42" />
+        </NavLink>
+        
+      
       
         
 

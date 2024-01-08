@@ -1,3 +1,14 @@
+.text-zone {
+  h1 {
+    font-size: 47px;
+    color: white;
+    margin: -22;
+
+  }
+}
+
+
+
 .contact-form {
     width: 100%;
     margin-top: 20px;
@@ -161,11 +172,11 @@
           text-decoration: none;
           padding: 8px 10px;
           border: 1px solid #ffd700;
-          float: left;
+         
           border-radius: 4px;
           background: 0 0;
           text-transform: uppercase;
-          float: left;
+    
           text-align: center;
           margin-right: 10px;
           cursor: pointer;
@@ -204,13 +215,17 @@
 @media only screen and (min-width: 768px) {
   .container {
     position: absolute;
-    height: 10px;
+    height: 20px;
     left: +50;
-    margin-left: 35px;
+    margin-left: 135px;
+  
+   
     
   
   }
-    
+    .text-zone {
+      height: 500px;
+    }
 }
 
 
@@ -219,8 +234,9 @@
 @media only screen and (min-width: 1600px) {
   .container {
     position: absolute;
-    left: +50;
-    margin-left: 45px;
+    
+   
+    margin-left: 145px;
    
   }
     

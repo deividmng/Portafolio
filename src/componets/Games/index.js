@@ -181,7 +181,7 @@ const Proyect = () => {
             <img className="max" src={F2} alt="developer" />
           </div>
         </Slider>
-
+       
       </div>
       <div className="link">
           <Link to={getLinkForImage(currentImage)} className="flat-buttom">
