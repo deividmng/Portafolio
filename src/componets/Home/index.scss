@@ -77,11 +77,18 @@
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
-    transition: background 0.3s ease, color 0.3s ease;
+
+  
+    border-radius: 2px;
 
     &:hover {
       background: #ffd700;
       color: #333;
+      background: linear-gradient(to left, #ffd90006, #ffd900fa);
+      background-size: 200% 50%; 
+      transition: background-position 2s ease, color 2s ease; 
+      border-right-color: #333;
+      
     }
   }
 }
@@ -217,13 +224,21 @@
       position: relative;
       left: -10px;
       width: 240px;
+     
     }
 
     h2 {
       position: relative;
       left: 10px;
+     
 
     }
+    .flat-buttom {
+      position: absolute;
+      left: 22px;
+      top: 210%;
+    }
+
     .container {
       width: 230px;
     }
