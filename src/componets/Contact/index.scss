@@ -3,114 +3,17 @@
     font-size: 47px;
     color: white;
     margin: -22;
-
   }
 }
 
+.mq-smal {
+  display: none;
+}
 
 
 .contact-form {
-    width: 100%;
-    margin-top: 20px;
-  
-    ul {
-      padding: 0;
-      margin: 0;
-  
-      li {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-bottom: 10px;
-        opacity: 0;
-        overflow: hidden;
-        display: block;
-        clear: both;
-        position: relative;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
-      }
-  
-      li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-  
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-        input[type='text'],
-        input[type='email'] {
-            width: 100%;
-            border: 0;
-            background: #115173;
-            height: 50px;
-            font-size: 16px;
-            color: #fff;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            width: 100%;
-            border: 0;
-            background: #115173;
-            height: 50px;
-            font-size: 16px;
-            color: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-            min-height: 150px;
-          }
-          
-          .flat-button {
-            color: #ffd700;
-            font-size: 11px;
-            letter-spacing: 3px;
-            text-decoration: none;
-            padding: 8px 10px;
-            border: 1px solid #ffd700;
-            float: left;
-            border-radius: 4px;
-            background: 0 0;
-            text-transform: uppercase;
-            float: left;
-            text-align: center;
-            margin-right: 10px;
-            cursor: pointer;
-            transition: background 0.3s ease, color 0.3s ease;
-         
-
-            &:hover {
-              background: #ffd700;
-              color: #333;
-          }
-          }
-
-    }   
-
-///tlf
-    @media screen and (max-width: 600px) {
-
-      .container {
-        position: absolute;
-        height: 10px;
-        left: +50;
-        margin-left: 35px;
-      }
-     
-.contact-form {
-  width: 90%;
-  
-  position: absolute;
-  padding-left: 11px;
-  z-index: 1;
-  left: 40;
-
-  top: 20;
+  width: 100%;
+  margin-top: 20px;
 
   ul {
     padding: 0;
@@ -141,75 +44,167 @@
       }
     }
   }
-      input[type='text'],
-      input[type='email'] {
-          width: 100%;
-          border: 0;
-          background: #115173;
-          height: 50px;
-          font-size: 16px;
-          color: #fff;
-          padding: 0 20px;
-          box-sizing: border-box;
-      }
-
-      textarea {
-          width: 100%;
-          border: 0;
-          background: #115173;
-          height: 50px;
-          font-size: 16px;
-          color: #fff;
-          padding: 20px;
-          box-sizing: border-box;
-          min-height: 150px;
-        }
-        
-        .flat-button {
-          color: #ffd700;
-          font-size: 11px;
-          letter-spacing: 3px;
-          text-decoration: none;
-          padding: 8px 10px;
-          border: 1px solid #ffd700;
-         
-          border-radius: 4px;
-          background: 0 0;
-          text-transform: uppercase;
-    
-          text-align: center;
-          margin-right: 10px;
-          cursor: pointer;
-          transition: background 0.3s ease, color 0.3s ease;
-       
-
-          &:hover {
-            background: #ffd700;
-            color: #333;
-        }
-        }
-
-  }   
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
-  /// Tablet
-  // @media screen and (min-width: 900px) {
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
 
-  //   .container {
-  //     position: absolute;
-  //     height: 10px;
-  //     left: +50;
-  //     margin-left: 235px;
-  //       }
-  //     }
+  .flat-button {
+    color: #ffd700;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffd700;
+    float: left;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
+}
+
+///tlf
+@media screen and (max-width: 600px) {
+  .container {
+    position: absolute;
+    height: 10px;
+    left: +50;
+    margin-left: 35px;
+  }
+
+  .contact-form {
+    width: 90%;
+
+    position: absolute;
+    padding-left: 11px;
+    z-index: 1;
+    left: 40;
+
+    top: 20;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+
+    .flat-button {
+      color: #ffd700;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #ffd700;
+
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+
+      text-align: center;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background: #ffd700;
+        color: #333;
+      }
+    }
+  }
+}
+
+/// Tablet
+// @media screen and (min-width: 900px) {
+
+//   .container {
+//     position: absolute;
+//     height: 10px;
+//     left: +50;
+//     margin-left: 235px;
+//       }
+//     }
 
 //// Ipad
-/// 
+///
 /// /* Extra small devices (phones, 600px and down) */
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -218,27 +213,84 @@
     height: 20px;
     left: +50;
     margin-left: 135px;
-  
-   
-    
-  
   }
-    .text-zone {
-      height: 500px;
-    }
+  .text-zone {
+    height: 500px;
+   
+  }
 }
-
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1600px) {
   .container {
     position: absolute;
-    
-   
+
     margin-left: 145px;
-   
   }
-    
 }
- 
+
+
+
+
+@media screen and (max-width: 600px) {
+  .text-zone {
+
+    .h1-contact{
+      position: absolute;
+      top: 10px;
+      left: 91px;
+     }
+    .contact-info {
+      display: none;
+    }
+    .mq-smal {
+      display: block;
+      margin-left:30%;
+      margin-right: 10%;
+   
+    }
+
+    .contact-info {
+      position: absolute;
+      top: 10px;
+      left: 91px;
+      font-size: 47px;
+      margin: -22;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 210px;
+    margin-left: 102px;
+    padding: 0 15px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      li.half {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      width: 100%;
+    }
+
+    .flat-button {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
+}
