@@ -1,5 +1,5 @@
 
-import './App.scss'
+import '../src/componets/Layout/App.scss'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './componets/Layout';
 import Home from './componets/Home';

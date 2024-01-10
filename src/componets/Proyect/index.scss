@@ -8,6 +8,15 @@
     left:20%;
   }
   
+
+.explain {
+
+  .show-mb {
+    background-color: red;
+  }
+}
+
+
   .slick-dots {// this is the 3 button under the img
     position: absolute;
     bottom: 1px;
@@ -152,18 +161,20 @@
       }
     }
   }
-  //this one is the mobile
+  //this one is the mobile it getting max 844px
   @media screen and (max-width: 644px) {
     
-    .explain {
-      display: none;
+    .show-mb {
+      display: block;
     }
+   
   
     .content {
       height: 230px;
       width: 250px;
       margin-left: 51px;
       position: absolute;
+  
       
     }
   

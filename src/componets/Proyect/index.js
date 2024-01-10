@@ -82,8 +82,13 @@ const Proyect = () => {
     } else if (imageSrc === F2) {
       return [
         <div className="explain">
-        <p>
+
+          <p className='show-mb'>
           This app is a to-do list (ToDo app) that allows users to add, edit,
+          delete, and mark their tasks as completed.
+          </p>
+        <p>
+          This  app is a to-do list (ToDo app) that allows users to add, edit,
           delete, and mark their tasks as completed. It facilitates efficient
           management of daily activities by providing an intuitive and
           user-friendly interface. Users can input new tasks through the input
