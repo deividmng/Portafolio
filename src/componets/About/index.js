@@ -49,7 +49,7 @@ const About = () => {
         
         </div>
         <div>
-          <div className="imagenPerfil relative mx-auto mt-11 mb-11 opacity-90 md:w-80 md:h-80"></div>
+          <div className="imagenPerfil "></div>
         </div>
         
         <Loader type="pacman" />
