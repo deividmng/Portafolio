@@ -1,8 +1,12 @@
+@import '../../base/variables';
+@import '../../base/bottom';
+
 .text-zone {
   h1 {
     font-size: 47px;
     color: white;
-    margin: -22;
+    margin: 22px;
+    
   }
 }
 
@@ -68,28 +72,10 @@
     min-height: 150px;
   }
 
-  .flat-button {
-    color: #ffd700;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
-    float: left;
-    text-align: center;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease;
+@mixin button {}
 
-    &:hover {
-      background: #ffd700;
-      color: #333;
-    }
-  }
+  .flat-button {
+    @include boton();
 }
 
 ///tlf
@@ -164,133 +150,24 @@
       min-height: 150px;
     }
 
-    .flat-button {
-      color: #ffd700;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-decoration: none;
-      padding: 8px 10px;
-      border: 1px solid #ffd700;
 
-      border-radius: 4px;
-      background: 0 0;
-      text-transform: uppercase;
-
-      text-align: center;
-      margin-right: 10px;
-      cursor: pointer;
-      transition: background 0.3s ease, color 0.3s ease;
-
-      &:hover {
-        background: #ffd700;
-        color: #333;
-      }
-    }
   }
 }
 
-/// Tablet
-// @media screen and (min-width: 900px) {
 
-//   .container {
-//     position: absolute;
-//     height: 10px;
-//     left: +50;
-//     margin-left: 235px;
-//       }
-//     }
 
-//// Ipad
-///
-/// /* Extra small devices (phones, 600px and down) */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .container {
-    position: absolute;
-    height: 20px;
-    left: +50;
-    margin-left: 135px;
-  }
-  .text-zone {
-    height: 500px;
-   
-  }
-}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1600px) {
-  .container {
-    position: absolute;
+// @media only screen and (min-width: 1600px) {
+//   .container {
+//     position: absolute;
 
-    margin-left: 145px;
-  }
-}
-
-
+//     margin-left: 145px;
+//   }
+// }
 
 
-@media screen and (max-width: 600px) {
-  .text-zone {
 
-    .h1-contact{
-      position: absolute;
-      top: 10px;
-      left: 91px;
-     }
-    .contact-info {
-      display: none;
-    }
-    .mq-smal {
-      display: block;
-      margin-left:30%;
-      margin-right: 10%;
-   
-    }
 
-    .contact-info {
-      position: absolute;
-      top: 10px;
-      left: 91px;
-      font-size: 47px;
-      margin: -22;
-    }
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 210px;
-    margin-left: 102px;
-    padding: 0 15px;
-
-    ul {
-      padding: 0;
-      margin: 0;
-
-      li {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-
-      li.half {
-        width: 100%;
-        margin-left: 0;
-      }
-    }
-
-    input[type='text'],
-    input[type='email'],
-    textarea {
-      width: 100%;
-    }
-
-    .flat-button {
-      width: 100%;
-      margin-right: 0;
-      margin-top: 10px;
-    }
-  }
 }

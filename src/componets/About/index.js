@@ -1,6 +1,4 @@
 import './index.scss'
-import F3 from '../../assets/images/to-do3.png'
-
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders/dist/react-loaders';
@@ -21,7 +19,7 @@ const About = () => {
     <> 
         <div className=' about-page'>
             <div className='text-zone'>
-            <h1>
+            <h1 className='about-me'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
@@ -50,9 +48,9 @@ const About = () => {
          
         
         </div>
-        <div className='img-me' >
-            <img  className='max' src={F3} alt="developer" />
-          </div>
+        <div>
+          <div className="imagenPerfil relative mx-auto mt-11 mb-11 opacity-90 md:w-80 md:h-80"></div>
+        </div>
         
         <Loader type="pacman" />
     </>

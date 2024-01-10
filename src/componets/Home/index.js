@@ -34,7 +34,7 @@ const Home = () => {
      <> 
         <div className='container home-page'>
             <div className='text-zone'>
-                <h1>
+                <h1 className='text-home'>
                     <span className={letterClass}>H</span>
                     <span className={`${letterClass} _12`}>i,</span>
                     <br/> 
@@ -51,7 +51,7 @@ const Home = () => {
                 idx={22}/>
                 <br/>
                 </h1>
-                <h2>Full-stack web developer</h2>
+                <h2 className='text-full'>Full-stack web developer</h2>
                 <div className='link-contact'>
 
                 <Link to="/contact" className='flat-buttom'>CONTACT ME</Link>
