@@ -1,6 +1,4 @@
 import './index.scss'
-import F3 from '../../assets/images/to-do3.png'
-
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders/dist/react-loaders';
@@ -21,7 +19,7 @@ const About = () => {
     <> 
         <div className=' about-page'>
             <div className='text-zone'>
-            <h1>
+            <h1 className='about-me'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
@@ -29,30 +27,23 @@ const About = () => {
             />
           </h1>
              <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+           
+Graduate of Le Wagon bootcamp in London, I discovered the vastness of the programming world and its potential for infinite solutions
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+          Contact me for any inquiries. Frontend Developer. I started programming in early 2022, teaching myself initially, and later decided to formalize my education with courses focused solely on the front end.
           </p>
           <p className='lastP' >
-            tell more about me,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxx
+          In 2023, I made the significant decision to undergo a major change and enrolled in Le wagon bootcamp. I acquired fundamental tools that have prepared me to take my first steps into the professional world.
           </p>
             </div>
 
          
         
         </div>
-        <div className='img-me' >
-            <img  className='max' src={F3} alt="developer" />
-          </div>
+        <div>
+          <div className="imagenPerfil "></div>
+        </div>
         
         <Loader type="pacman" />
     </>

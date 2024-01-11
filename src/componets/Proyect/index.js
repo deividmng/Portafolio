@@ -9,6 +9,10 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+import { faCss3, faGithub, faHtml5, faJs,   } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 const settings = {
   dots: true,
   infinite: true,
@@ -21,7 +25,7 @@ const Proyect = () => {
   const [currentImage, setCurrentImage] = useState(F1)
 
   const getLinkForImage = (imageSrc) => {
-    // Aquí puedes ajustar las URL según tus necesidades
+    // here the url depending of the img
     if (imageSrc === F1) {
       return 'https://to-do-app22.netlify.app/'
       
@@ -49,7 +53,7 @@ const Proyect = () => {
   }
 
   const getParagraphsForImage = (imageSrc) => {
-    // Aquí puedes ajustar el contenido de los párrafos según tus necesidades
+    
     if (imageSrc === F1) {
       return [
         <div className="explain">
@@ -77,6 +81,19 @@ const Proyect = () => {
             provides a practical and effective solution for organizing daily
             tasks.
           </p>
+          <div className='iconos'>
+          <FontAwesomeIcon icon={faJs}  color="#EFD81D" />
+          <FontAwesomeIcon icon={faHtml5}   style={{ marginRight: '30px' , marginLeft: '30px' }}color="#F06529"/>
+          <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+
+          <div className='iconos-link'>
+            <a target="_blank" rel="noreferrer" href="https://github.com/deividmng/to-do">
+
+            <FontAwesomeIcon icon={faGithub} className='icono' color="#888888" />
+            <span>Link to Github</span>
+            </a>
+        </div>
+          </div>
         </div>
       ]
     } else if (imageSrc === F2) {

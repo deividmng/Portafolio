@@ -59,7 +59,8 @@
   }
   
   .explain {
-    font-size: 20px;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     left: 60%;
     position: absolute;
     top: 20%;
@@ -67,8 +68,9 @@
     color: white;
     margin-right: 50px;
   }
-  
   .flat-buttom {
+    position: absolute;
+    top: 93px;
     color: #ffd700;
     font-size: 13px;
     font-weight: 400;
@@ -81,13 +83,20 @@
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
-    transition: background 0.3s ease, color 0.3s ease;
+
+  
+    border-radius: 2px;
+
     &:hover {
       background: #ffd700;
       color: #333;
+      background: linear-gradient(to left, #ffd90006, #ffd900fa);
+      background-size: 200% 50%; 
+      transition: background-position 2s ease, color 2s ease; 
+      border-right-color: #333;
+      
     }
   }
-  
   p {
     font-size: 18px;
     color: #fff;

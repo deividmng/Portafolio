@@ -1,0 +1,96 @@
+// this mq is the one of mobile 
+
+@import '/src/base/variables';
+@media screen and (max-width: $mobile) {
+    .text-zone {
+  
+      .h1-contact{
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        font-size: 44px;
+      
+       }
+      .contact-info {
+        display: none;
+      }
+      .mq-smal {
+        display: block;
+        margin-left:35%;
+        margin-right: 10%;
+     
+      }
+  
+      .contact-info {
+        position: absolute;
+        top: 10px;
+        left: 91px;
+        font-size: 47px;
+        margin: -22;
+      }
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      max-width: 210px;
+      margin-left: 122px;
+      padding: 0 15px;
+  
+      ul {
+        padding: 0;
+        margin: 0;
+  
+        li {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+  
+        li.half {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+  
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 100%;
+      }
+  
+      .flat-button {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+  // end of the mq of the mobile 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: $tablet) {
+  .container {
+    position: absolute;
+    top: 30%;
+    left: 150px;
+    height: 42%;
+  }
+  .text-zone {
+    height: 500px;
+    
+  
+  }
+}
+@media only screen and (min-width: $desktop) {
+  .container {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    height: 4%;
+  }
+
+    .text-zone {
+        font-size: 47px;
+        margin: 38px;
+  }
+}

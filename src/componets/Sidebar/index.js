@@ -97,8 +97,10 @@ const Sidebar = () => (
             className="contact-Github"
           />
         </a>
+        
       </li>
     </ul>
+    
   </div>
 )
 
