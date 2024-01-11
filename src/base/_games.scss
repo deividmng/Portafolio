@@ -1,0 +1,31 @@
+.iconos {
+    font-size: 53px;
+    margin-right: 10px;
+    padding-right: 10px;
+ 
+   
+}
+
+
+.iconos-link {
+  cursor: pointer;
+     margin-right: 10px;
+    padding-right: 10px;
+    
+    a {
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none; // Quitalos estilos predeterminados del enlace
+        color: inherit;
+    }
+
+  span {
+    
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 12px;
+  }
+ 
+}
+
+

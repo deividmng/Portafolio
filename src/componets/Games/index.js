@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import './index.scss'
 import Loader from 'react-loaders'
-import F1 from '../../assets/images/to-do.png'
+import F1 from '../../assets/images/game1.png'
 import F2 from '../../assets/images/to-do2.png'
 import F3 from '../../assets/images/last.png'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { faCss3, faGithub, faHtml5, faJs,   } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const settings = {
   dots: true,
@@ -23,10 +25,9 @@ const Proyect = () => {
   const getLinkForImage = (imageSrc) => {
     // Aquí puedes ajustar las URL según tus necesidades
     if (imageSrc === F1) {
-      return 'https://to-do-app22.netlify.app/'
-      
+      return 'https://arkanoidgame22.netlify.app/'
     } else if (imageSrc === F2) {
-      return 'https://to-do-app22.netlify.app/'
+      return 'https://arkanoidgame22.netlify.app/'
     } else if (imageSrc === F3) {
       return 'https://www.vempo.site/'
     } else {
@@ -34,11 +35,10 @@ const Proyect = () => {
     }
   }
 
-
   const getTextForLink = (imageSrc) => {
     // Puedes ajustar los textos según tus necesidades
     if (imageSrc === F1) {
-      return 'Link to Proyect To Do '
+      return 'Link to Proyect Ankanoid Game '
     } else if (imageSrc === F2) {
       return 'Link to Proyect To Do'
     } else if (imageSrc === F3) {
@@ -54,6 +54,35 @@ const Proyect = () => {
       return [
         <div className="explain">
           <p>
+            Breakout Master is an exciting style
+            game that combines action, skill, and strategy. The main objective
+            of the game is to destroy all the bricks on the screen using a
+            bouncing ball and a paddle controlled by the player.
+          </p>
+          <p>
+           
+The player controls a horizontal paddle to bounce a ball and destroy bricks arranged on the screen. The ball bounces realistically, and the paddle moves with the left and right keys or the mouse. The game includes multiple levels with varied brick arrangements and special features such as bonuses and paddle transformations. Scores and lives are displayed, and the game ends if all lives are lost. Additionally, there are special events like increasing the paddle size based on the achieved score. The code handles collision detection, updates the game state in an animation loop, and displays Game Over or Victory messages based on the player's performance.
+          </p>
+          <div className='iconos'>
+          <FontAwesomeIcon icon={faJs}  color="#EFD81D" />
+          <FontAwesomeIcon icon={faHtml5}   style={{ marginRight: '30px' , marginLeft: '30px' }}color="#F06529"/>
+          <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+
+          <div className='iconos-link'>
+            <a target="_blank" rel="noreferrer" href="https://github.com/deividmng/ARKANOID">
+
+         <FontAwesomeIcon icon={faGithub} className='icono' color="#888888" />
+            <span>Link to Github</span>
+            </a>
+        </div>
+          </div>
+        
+        </div>,
+      ]
+    } else if (imageSrc === F2) {
+      return [
+        <div className="explain">
+          <p>
             This app is a to-do list (ToDo app) that allows users to add, edit,
             delete, and mark their tasks as completed. It facilitates efficient
             management of daily activities by providing an intuitive and
@@ -62,7 +91,7 @@ const Proyect = () => {
             existing tasks. Additionally, the deletion feature allows users to
             get rid of unwanted tasks.
           </p>
-          <p >
+          <p>
             The ability to mark tasks as completed provides a visual way to
             track progress. The app features an editing function that allows
             users to modify existing tasks, adapting to changes or updates. The
@@ -77,36 +106,7 @@ const Proyect = () => {
             provides a practical and effective solution for organizing daily
             tasks.
           </p>
-        </div>
-      ]
-    } else if (imageSrc === F2) {
-      return [
-        <div className="explain">
-        <p>
-          This app is a to-do list (ToDo app) that allows users to add, edit,
-          delete, and mark their tasks as completed. It facilitates efficient
-          management of daily activities by providing an intuitive and
-          user-friendly interface. Users can input new tasks through the input
-          interface, and the app offers the flexibility to edit the content of
-          existing tasks. Additionally, the deletion feature allows users to
-          get rid of unwanted tasks.
-        </p>
-        <p >
-          The ability to mark tasks as completed provides a visual way to
-          track progress. The app features an editing function that allows
-          users to modify existing tasks, adapting to changes or updates. The
-          integration of Toastify notifications enhances the user experience
-          by providing clear and concise messages, such as successful deletion
-          confirmations or task updates.
-        </p>
-        <p>
-          The app uses local storage to preserve tasks even after closing the
-          browser window. This ensures that users can consistently access and
-          manage their tasks. With a clean and attractive design, the ToDo app
-          provides a practical and effective solution for organizing daily
-          tasks.
-        </p>
-      </div>
+        </div>,
       ]
     } else if (imageSrc === F3) {
       return [
@@ -138,13 +138,7 @@ const Proyect = () => {
           </p>
         </div>,
       ]
-    } else {
-      return [
-        'Párrafo 1 por defecto',
-        'Párrafo 2 por defecto',
-        'Párrafo 3 por defecto',
-      ]
-    }
+    } 
   }
 
   const paragraphs = getParagraphsForImage(currentImage)
@@ -172,7 +166,7 @@ const Proyect = () => {
           }}
         >
           <div>
-            <img className="max" src={F1} alt="developer" />
+            <img className="" src={F1} alt="developer" />
           </div>
           <div>
             <img className="max" src={F3} alt="developer" />
@@ -181,13 +175,12 @@ const Proyect = () => {
             <img className="max" src={F2} alt="developer" />
           </div>
         </Slider>
-       
       </div>
       <div className="link">
-          <Link to={getLinkForImage(currentImage)} className="flat-buttom">
+        <Link to={getLinkForImage(currentImage)} className="flat-buttom">
           {getTextForLink(currentImage)}
-          </Link>
-        </div>
+        </Link>
+      </div>
 
       <div>
         {paragraphs.map((paragraph, index) => (
@@ -195,6 +188,8 @@ const Proyect = () => {
         ))}
       </div>
       <Loader type="pacman" />
+
+
     </div>
   )
 }

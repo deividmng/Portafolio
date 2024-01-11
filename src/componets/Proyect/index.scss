@@ -59,7 +59,8 @@
   }
   
   .explain {
-    font-size: 20px;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     left: 60%;
     position: absolute;
     top: 20%;
@@ -68,6 +69,8 @@
     margin-right: 50px;
   }
   .flat-buttom {
+    position: absolute;
+    top: 93px;
     color: #ffd700;
     font-size: 13px;
     font-weight: 400;

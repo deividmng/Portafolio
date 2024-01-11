@@ -14,12 +14,7 @@ const Home = () => {
     const [letterClass, setLetterClass] =  useState('text-animate')
     const nameArray = ['','a','v','i','d']
     const jobArray = ['W','e','b', ' ','D','e','v','e','l','o','p','e','r']
-    
-    // useEffect(() => {
-    //     return setTimeout(() => {
-    //       setLetterClass('text-animate-hover')
-    //     }, 4000)
-    //   }, [])
+  
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover');
@@ -64,6 +59,7 @@ const Home = () => {
               <div className='cubespinner'>
                 <div className='face1'>
                   <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
+                  
                 </div>
                 <div className='face2'>
                   <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
@@ -85,7 +81,8 @@ const Home = () => {
        
 
 
-      <Loader type="pacman"/>
+            <Loader type="pacman"
+             timeout={3000} ></Loader>
         </>
     )
 }
