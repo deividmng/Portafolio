@@ -1,0 +1,135 @@
+@import'/src/base/variables';
+
+/////mq for the tlf
+
+@media screen and (max-width: $mobile) {  
+    .stage-cube-cont {
+      width: 110%;
+      height: 100%;
+      top: +400px;
+      left: 10px;
+      margin-left: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  
+    .home-page {
+      .flat-buttom-home {
+        position: absolute;
+        left: 40%;
+        top: 90%;
+      }
+    
+      .text-home {
+        font-size: 37px; 
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        left: 122px;
+        top: -82px;
+  
+        &:hover::before {
+          color: lighten($color: #ffd700, $amount: 60);
+        }
+      }
+      .text-zone {
+        left: +135px;
+        top: +5%;
+        font-size: 50px;
+        
+      }
+    }
+    .text-full {
+      position: absolute;
+      top: -102px;
+      margin-left: 200px;
+    }
+  }
+  
+  
+  
+  
+  
+  // getting the 390\844 this is the one is work 
+   @media  (max-width:700px) {
+    .home-page {
+      h1  {
+        position: relative;
+        left: -10px;
+        width: 240px;
+       
+      }
+  
+      h2 {
+        position: relative;
+        left: 10px;
+       
+  
+      }
+      .flat-buttom {
+        position: absolute;
+        left: 22px;
+        top: 101px;
+        
+    
+      }
+  
+      .container {
+        width: 230px;
+      }
+    }
+    .cubespinner {
+      animation-name: spincube;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      transform-style: preserve-3d;
+      transform-origin: 65px 65px 0; /* Ajusta el punto de origen de la transformación */
+      margin-left: calc(50% - 50px);
+    
+      div {
+        position: absolute;
+        width: 168px; /* Ajusta el ancho */
+        height: 168px; /* Ajusta la altura */
+        border: 1px solid #ccc;
+        background: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        font-size: 60px; /* Ajusta el tamaño de la fuente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px 0px lightyellow; /* Ajusta la sombra */
+      }
+    
+      .face1 {
+        transform: translateZ(85px); /* Ajusta la profundidad */
+        color: #dd0031;
+      }
+      .face2 {
+        transform: rotateY(90deg) translateZ(85px);
+        color: #f06529;
+      }
+      .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(85px);
+        color: #28a4d9;
+      }
+      .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(85px);
+        color: #5ed4f4;
+      }
+      .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(85px);
+        color: #efd81d;
+      }
+      .face6 {
+        transform: rotateX(-90deg) translateZ(85px);
+        color: #ec4d28;
+      }
+    }
+    
+   }
+  
+  
+  
+  
+  

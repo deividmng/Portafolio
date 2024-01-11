@@ -69,7 +69,8 @@
     animation: fadeIn 1s 1.8s backwards;
   }
 
-  .flat-buttom {
+  .flat-buttom-home {
+
     color: #ffd700;
     font-size: 13px;
     font-weight: 400;
@@ -195,9 +196,7 @@
 
 /////mq for the tlf
 
-@media screen and (max-width: $mobile) {
-
-  
+@media screen and (max-width: $mobile) {  
   .stage-cube-cont {
     width: 110%;
     height: 100%;
@@ -209,6 +208,12 @@
   }
 
   .home-page {
+    .flat-buttom-home {
+      position: absolute;
+      left: 40%;
+      top: 90%;
+    }
+  
     .text-home {
       font-size: 37px; 
       margin: 0;
@@ -258,7 +263,9 @@
     .flat-buttom {
       position: absolute;
       left: 22px;
-      top: 210%;
+      top: 101px;
+      
+  
     }
 
     .container {

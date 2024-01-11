@@ -49,7 +49,7 @@ const Home = () => {
                 <h2 className='text-full'>Full-stack web developer</h2>
                 <div className='link-contact'>
 
-                <Link to="/contact" className='flat-buttom'>CONTACT ME</Link>
+                <Link to="/contact" className='flat-buttom-home'>CONTACT ME</Link>
                 </div>
             </div>
            
