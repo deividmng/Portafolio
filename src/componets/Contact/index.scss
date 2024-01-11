@@ -72,11 +72,11 @@
     min-height: 150px;
   }
 
-@mixin button {}
+// @mixin button {}
 
-  .flat-button {
-    @include boton();
-}
+//   .flat-button {
+//     @include boton();
+// }
 
 ///tlf
 @media screen and (max-width: 600px) {
@@ -153,19 +153,6 @@
 
   }
 }
-
-
-
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1600px) {
-//   .container {
-//     position: absolute;
-
-//     margin-left: 145px;
-//   }
-// }
 
 
 
