@@ -89,10 +89,10 @@ const Contact = () => {
                           ></textarea>
                          </li>
                           <li>
-                           <input type="submit" className="flat-button" value="Send" />
+                       
                           </li>
                          </ul>
-
+                         <input type="submit" className="inputbtnContact" value="Send" />
                         </form>
                     </div> 
           
