@@ -7,6 +7,7 @@ import About from './componets/About'
 import Contact from './componets/Contact';
 import Proyect from './componets/Proyect';
 import Games from './componets/Games';
+import Brain from './componets/Brain';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="proyect" element={<Proyect/>} />
           <Route path="games" element={<Games/>} />
+          <Route path="brain" element={<Brain/>} />
        
         </Route>
       </Routes>

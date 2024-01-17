@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import './index.scss'
 import Loader from 'react-loaders'
 import F1 from '../../assets/images/game1.png'
-import F2 from '../../assets/images/to-do2.png'
-import F3 from '../../assets/images/last.png'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { faCss3, faGithub, faHtml5, faJs,   } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGithub, faHtml5, faJs } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const settings = {
@@ -23,122 +21,52 @@ const Proyect = () => {
   const [currentImage, setCurrentImage] = useState(F1)
 
   const getLinkForImage = (imageSrc) => {
-    // Aquí puedes ajustar las URL según tus necesidades
     if (imageSrc === F1) {
       return 'https://arkanoidgame22.netlify.app/'
-    } else if (imageSrc === F2) {
-      return 'https://arkanoidgame22.netlify.app/'
-    } else if (imageSrc === F3) {
-      return 'https://www.vempo.site/'
     } else {
       return 'https://link-por-defecto.com'
     }
   }
 
   const getTextForLink = (imageSrc) => {
-    // Puedes ajustar los textos según tus necesidades
     if (imageSrc === F1) {
-      return 'Link to Proyect Ankanoid Game '
-    } else if (imageSrc === F2) {
-      return 'Link to Proyect To Do'
-    } else if (imageSrc === F3) {
-      return 'Link to Proyect Vempo'
+      return 'Link to Breakout Master Game'
     } else {
       return 'Link por defecto'
     }
   }
 
   const getParagraphsForImage = (imageSrc) => {
-    // Aquí puedes ajustar el contenido de los párrafos según tus necesidades
     if (imageSrc === F1) {
       return [
-        <div className="explain">
+        <div className="explain" key={0}>
           <p>
-            Breakout Master is an exciting style
-            game that combines action, skill, and strategy. The main objective
-            of the game is to destroy all the bricks on the screen using a
-            bouncing ball and a paddle controlled by the player.
+            Breakout Master is an exciting style game that combines action, skill, and strategy. The main objective
+            of the game is to destroy all the bricks on the screen using a bouncing ball and a paddle controlled by the player.
           </p>
           <p>
-           
-The player controls a horizontal paddle to bounce a ball and destroy bricks arranged on the screen. The ball bounces realistically, and the paddle moves with the left and right keys or the mouse. The game includes multiple levels with varied brick arrangements and special features such as bonuses and paddle transformations. Scores and lives are displayed, and the game ends if all lives are lost. Additionally, there are special events like increasing the paddle size based on the achieved score. The code handles collision detection, updates the game state in an animation loop, and displays Game Over or Victory messages based on the player's performance.
+            The player controls a horizontal paddle to bounce a ball and destroy bricks arranged on the screen. The ball bounces realistically,
+            and the paddle moves with the left and right keys or the mouse. The game includes multiple levels with varied brick arrangements
+            and special features such as bonuses and paddle transformations. Scores and lives are displayed, and the game ends if all lives are lost.
+            Additionally, there are special events like increasing the paddle size based on the achieved score. The code handles collision detection,
+            updates the game state in an animation loop, and displays Game Over or Victory messages based on the player's performance.
           </p>
           <div className='iconos'>
-          <FontAwesomeIcon icon={faJs}  color="#EFD81D" />
-          <FontAwesomeIcon icon={faHtml5}   style={{ marginRight: '30px' , marginLeft: '30px' }}color="#F06529"/>
-          <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
-
-          <div className='iconos-link'>
-            <a target="_blank" rel="noreferrer" href="https://github.com/deividmng/ARKANOID">
-
-         <FontAwesomeIcon icon={faGithub} className='icono' color="#888888" />
-            <span>Link to Github</span>
-            </a>
-        </div>
+            <FontAwesomeIcon icon={faJs} color="#EFD81D" />
+            <FontAwesomeIcon icon={faHtml5} style={{ marginRight: '30px', marginLeft: '30px' }} color="#F06529" />
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            <div className='iconos-link'>
+              <a target="_blank" rel="noreferrer" href="https://github.com/deividmng/ARKANOID">
+                <FontAwesomeIcon icon={faGithub} className='icono' color="#888888" />
+                <span>Link to Github</span>
+              </a>
+            </div>
           </div>
-        
         </div>,
       ]
-    } else if (imageSrc === F2) {
-      return [
-        <div className="explain">
-          <p>
-            This app is a to-do list (ToDo app) that allows users to add, edit,
-            delete, and mark their tasks as completed. It facilitates efficient
-            management of daily activities by providing an intuitive and
-            user-friendly interface. Users can input new tasks through the input
-            interface, and the app offers the flexibility to edit the content of
-            existing tasks. Additionally, the deletion feature allows users to
-            get rid of unwanted tasks.
-          </p>
-          <p>
-            The ability to mark tasks as completed provides a visual way to
-            track progress. The app features an editing function that allows
-            users to modify existing tasks, adapting to changes or updates. The
-            integration of Toastify notifications enhances the user experience
-            by providing clear and concise messages, such as successful deletion
-            confirmations or task updates.
-          </p>
-          <p>
-            The app uses local storage to preserve tasks even after closing the
-            browser window. This ensures that users can consistently access and
-            manage their tasks. With a clean and attractive design, the ToDo app
-            provides a practical and effective solution for organizing daily
-            tasks.
-          </p>
-        </div>,
-      ]
-    } else if (imageSrc === F3) {
-      return [
-        <div className="explain">
-          <p>
-            This project is conceived as an interactive experience that empowers
-            users by offering them the opportunity to unleash their creativity
-            through the creation of shapes with a wide palette of colors. The
-            application not only limits itself to the static creation of forms
-            but goes beyond by demanding dynamic movements and manipulations of
-            the generated objects.
-          </p>
-
-          <p>
-            In the development of this application, special attention has been
-            dedicated to the front-end, where visual elements come to life. An
-            attractive and responsive design has been implemented using advanced
-            tools such as Bootstrap, HTML, and CSS. These elements not only
-            provide a visually pleasing interface but also ensure an intuitive
-            and user-friendly experience.
-          </p>
-          <p>
-            On the other hand, in the back end, robust and versatile
-            technologies such as Ruby on Rails and JavaScript have been employed
-            to manage the underlying logic of the application. These
-            technologies not only offer robustness and efficiency but also
-            facilitate the interactivity necessary for users to fully enjoy the
-            experience of creating dynamic shapes.
-          </p>
-        </div>,
-      ]
-    } 
+    } else {
+      return [<p key={0}>Content for other images goes here</p>]
+    }
   }
 
   const paragraphs = getParagraphsForImage(currentImage)
@@ -149,16 +77,9 @@ The player controls a horizontal paddle to bounce a ball and destroy bricks arra
         <Slider
           {...settings}
           beforeChange={(oldIndex, newIndex) => {
-            // Antes de cambiar la imagen, actualiza el estado de la imagen actual
             switch (newIndex) {
               case 0:
                 setCurrentImage(F1)
-                break
-              case 1:
-                setCurrentImage(F3)
-                break
-              case 2:
-                setCurrentImage(F2)
                 break
               default:
                 setCurrentImage(F1)
@@ -167,12 +88,6 @@ The player controls a horizontal paddle to bounce a ball and destroy bricks arra
         >
           <div>
             <img className="" src={F1} alt="developer" />
-          </div>
-          <div>
-            <img className="max" src={F3} alt="developer" />
-          </div>
-          <div>
-            <img className="max" src={F2} alt="developer" />
           </div>
         </Slider>
       </div>
@@ -188,8 +103,6 @@ The player controls a horizontal paddle to bounce a ball and destroy bricks arra
         ))}
       </div>
       <Loader type="pacman" />
-
-
     </div>
   )
 }

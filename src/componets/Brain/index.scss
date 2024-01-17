@@ -1,0 +1,29 @@
+
+
+.content-video {
+    left: 7%;
+    top: 20%;
+    position: absolute;
+    width: 800px; /* Adjust the width of the container */
+    height: 600px; /* Adjust the height of the container */
+  
+    video {
+      height: 100%; /* Make the video fill the height of the container */
+      width: 100%; /* Make the video fill the width of the container */
+    }
+  }
+
+  .custom-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+  }
+  
+  .custom-controls button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
